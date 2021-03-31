@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/semantic/semantic.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
+    <script src="semantic/semantic.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boundless API</title>
+</head>
+<body>
+    
+    <header class="ui header">
+        <div class="ui three item menu">
+            <a href="" class="item active">Items</a>
+            <a href="/web/worlds" class="item">Worlds</a>
+        </div>
+    </header>
+    <main>
+        <form class="ui action input" id="search_form">
+            <input type="text" placeholder="Search.." id="query">
+            <input class="ui button" type="submit" value="Submit">
+        </form>
+        <div class="ui horizontal divider"></div>
+        <div>    
+            <button id="prev" class="ui button">Prev</button>
+            <button id="next" class="ui button">Next</button>
+        </div>
+        <table class="ui celled table">
+            <thead>
+                <tr><th>Name</th>
+                <th>Type</th>
+                <th>Link</th>
+            </thead>
+            <tbody class="content">
+
+            </tbody>
+        </table>
+
+    </main>
+    <footer class="ui fixed bottom sticky">
+        <div class="ui segment header">Created by Darmawan.</div>
+    </footer>
+    
+
+    <script src="/javascripts/index.js"></script>
+</body>
+</html>
